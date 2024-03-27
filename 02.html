@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <script>
+        alert('Diga as notas atingidas nas suas 4 últimas provas!')
+
+        let nota1 = parseFloat(prompt('Nota da prova 01'));
+        let nota2 = parseFloat(prompt('Nota da prova 02'));
+        let nota3 = parseFloat(prompt('Nota da prova 03'));
+        let nota4 = parseFloat(prompt('Nota da prova 04'));
+
+        let soma = nota1 + nota2 + nota3 + nota4;
+        let media = soma/ 4;
+
+        if(media>=7.0){
+        alert('Aluno aprovado com a média: ' + media);
+        }
+        else{
+            let notaRecuperação = parseFloat(prompt("Nota da Recuperação"));
+            let novaMedia = (media + notaRecuperação)/ 2;
+        }
+        if(novaMedia>=5.0){
+            alert('Aluno aprovado com a média:' + novaMedia)
+        }
+        else if(novaMedia<5.0){
+            alert('Aluno Reprovado com a média: ' + novaMedia)
+        }
+    </script>
+</body>
+</html>

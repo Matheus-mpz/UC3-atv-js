@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+    <script>
+        alert("Boa tarde, entregue algumas informações para saber o balanço geral do seu rendimento na empresa!");
+
+        let nameVendedor = prompt("Qual seu nome?");
+        let salario = parseFloat(prompt("Informe seu salário fixo (em reais):"));
+        let vendas = parseFloat(prompt("Número de vendas no mês (em reais):"));
+
+        let comissão = vendas * 0.15;
+        let totalmes = comissão + salario;
+
+        alert("Muito bem " + nameVendedor + " seu salário fixo e de: R$" + salario + " e o seu salário total no mês foi de: R$" + totalmes);
+    </script>
+</body>
+</html>
